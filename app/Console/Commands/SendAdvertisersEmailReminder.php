@@ -26,6 +26,8 @@ class SendAdvertisersEmailReminder extends Command
 
     public function __construct(AdvertiserRepositoryInterface $advertiserRepository)
     {
+        parent::__construct();
+
         $this->advertiserRepository = $advertiserRepository;
     }
 
